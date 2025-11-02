@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiMenu, FiX, FiDownload } from 'react-icons/fi'
-import { useInView } from 'react-intersection-observer'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
