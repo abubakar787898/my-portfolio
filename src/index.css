@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-accent;
+  }
+  
+  body {
+    @apply bg-gradient-dark text-white font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-primary-light/10 backdrop-blur-md border border-secondary/20;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-secondary text-primary-dark font-semibold rounded-lg 
+           transition-all duration-300 hover:bg-secondary-light hover:shadow-lg 
+           hover:shadow-secondary/50 hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-secondary text-secondary font-semibold 
+           rounded-lg transition-all duration-300 hover:bg-secondary/10 
+           hover:shadow-lg hover:shadow-secondary/30 hover:scale-105 active:scale-95;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-heading font-bold mb-4 text-white;
+  }
+
+  .section-subtitle {
+    @apply text-accent text-lg mb-8;
+  }
+
+  .card {
+    @apply glass-effect rounded-xl p-6 transition-all duration-300 hover:shadow-xl 
+           hover:shadow-secondary/20 hover:-translate-y-2;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent;
+  }
+
+  .animate-gradient-border {
+    background: linear-gradient(90deg, #64FFDA, #4DD4B8, #64FFDA);
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A192F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64FFDA;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4DD4B8;
+}
+
+/* Smooth transitions for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
