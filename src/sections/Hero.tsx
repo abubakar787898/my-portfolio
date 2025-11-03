@@ -198,7 +198,7 @@ const Hero = () => {
               <motion.div
                 className="absolute inset-0 rounded-full p-1"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
+                transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                 style={{
                   background: 'linear-gradient(45deg, #64FFDA, #4DD4B8, #64FFDA)',
                   backgroundSize: '200% 200%',

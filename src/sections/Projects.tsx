@@ -15,9 +15,30 @@ const Projects = () => {
 
   const filters: FilterType[] = ['all', 'laravel', 'react', 'mern', 'nextjs']
 
-  const filteredProjects = projects.filter(
-    (project) => filter === 'all' || project.category === filter
-  )
+  const filterLabels: Record<FilterType, string> = {
+    all: 'All Projects',
+    laravel: 'Laravel',
+    react: 'React.js',
+    mern: 'MERN Stack',
+    nextjs: 'Next.js',
+  }
+
+  const filteredProjects = projects.filter((project) => {
+    if (filter === 'all') return true
+    if (filter === 'laravel') {
+      // Show projects that are categorized as Laravel OR have Laravel in tech stack
+      return project.category === 'laravel' || project.techStack.some(tech => 
+        tech.toLowerCase().includes('laravel')
+      )
+    }
+    if (filter === 'nextjs') {
+      // Show projects that are categorized as Next.js OR have Next.js in tech stack
+      return project.category === 'nextjs' || project.techStack.some(tech => 
+        tech.toLowerCase().includes('next.js') || tech.toLowerCase().includes('nextjs')
+      )
+    }
+    return project.category === filter
+  })
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -79,7 +100,7 @@ const Projects = () => {
                   : 'bg-primary-light/10 text-accent hover:bg-primary-light/20 border border-secondary/20'
               }`}
             >
-              {filterType.charAt(0).toUpperCase() + filterType.slice(1)}
+              {filterLabels[filterType]}
             </motion.button>
           ))}
         </motion.div>

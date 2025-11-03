@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiMenu, FiX, FiDownload } from 'react-icons/fi'
+import { personalInfo } from '../data/personalInfo'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -93,7 +94,7 @@ const Navigation = () => {
               </button>
             ))}
             <motion.a
-              href="/resume.pdf"
+              href={personalInfo.resumeUrl || '/resume.pdf'}
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -138,7 +139,7 @@ const Navigation = () => {
                 </button>
               ))}
               <motion.a
-                href="/resume.pdf"
+                href={personalInfo.resumeUrl || '/resume.pdf'}
                 download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

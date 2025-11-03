@@ -1,36 +1,91 @@
 # Image Assets
 
-This directory contains placeholder images for the portfolio. Replace these with your actual images.
+This directory contains images for the portfolio. Add your project screenshots here.
 
-## Required Images
+## 📸 How to Add Project Screenshots
+
+### Step 1: Prepare Your Screenshots
+Take screenshots of your projects showing:
+- Main dashboard/homepage
+- Key features or functionality
+- Clean, professional appearance
+
+### Step 2: Save Screenshots
+Save your screenshots in `public/images/` with these exact filenames:
+
+| Project | Required Filename | Alternative Formats |
+|---------|------------------|-------------------|
+| **YAKSPORT** | `yaksport.jpg` | `yaksport.png`, `yaksport.webp` |
+| **Evarto** | `evarto.jpg` | `evarto.png`, `evarto.webp` |
+| **JURII** | `jurii.jpg` | `jurii.png`, `jurii.webp` |
+| **Tututor.ai** | `tututor.jpg` | `tututor.png`, `tututor.webp` |
+| **Minder** | `minder.jpg` | `minder.png`, `minder.webp` |
+| **Quickbite** | `quickbite.jpg` | `quickbite.png`, `quickbite.webp` |
+| **Naim.dk** | `naim.jpg` | `naim.png`, `naim.webp` |
+
+### Step 3: Image Specifications
+- **Recommended size**: 1200x800px (16:9 aspect ratio) or 800x600px
+- **Format**: JPG (recommended), PNG, or WebP
+- **File size**: Keep under 500KB per image for best performance
+- **Quality**: High quality but optimized (use tools like TinyPNG or Squoosh)
+
+### Step 4: Verify
+After adding images, restart your dev server and check the Projects section.
+
+## 🖼️ Profile Image
 
 ### Profile Image
-- **Path**: `public/images/profile.jpg`
-- **Size**: 400x400px (or square aspect ratio)
-- **Format**: JPG, PNG, or WebP
+- **Path**: `public/images/profile.png` (or `profile.jpg`)
+- **Size**: 400x400px (square aspect ratio recommended)
+- **Format**: PNG, JPG, or WebP
 - **Usage**: Hero section profile picture and About section
 
-### Project Images
-Place project images in `public/images/`:
-- `yaksport.jpg` - YAKSPORT project thumbnail
-- `evarto.jpg` - Evarto project thumbnail  
-- `jurii.jpg` - JURII project thumbnail
-- `tututor.jpg` - Tututor.ai project thumbnail
+## 📝 Current Project Images
 
-**Recommended sizes**: 600x400px or 1200x800px
-**Format**: JPG, PNG, or WebP
+Your portfolio expects these project screenshots:
 
-## Current Setup
+```
+public/images/
+├── yaksport.jpg    ← YAKSPORT screenshot
+├── evarto.jpg      ← Evarto screenshot
+├── jurii.jpg       ← JURII screenshot
+├── tututor.jpg     ← Tututor.ai screenshot
+├── minder.jpg      ← Minder screenshot
+├── quickbite.jpg   ← Quickbite screenshot
+├── naim.jpg        ← Naim.dk screenshot
+└── profile.png     ← Your profile photo
+```
 
-The application uses placeholder images with fallback URLs. You can:
-1. Add your actual images to `public/images/`
-2. Or update image paths in `src/data/projects.ts`
+## ⚙️ Image Path Configuration
 
-## Image Optimization
+If you need to use different filenames or paths, update `src/data/projects.ts`:
 
-For best performance:
-- Use WebP format when possible
-- Compress images before adding
-- Use appropriate sizes (don't use oversized images)
-- Consider lazy loading for below-the-fold images
+```typescript
+{
+  image: '/images/your-custom-filename.jpg',
+  // ...
+}
+```
+
+## 🚀 Image Optimization Tips
+
+For best performance and user experience:
+
+1. **Compress images** before adding:
+   - Use [TinyPNG](https://tinypng.com/) or [Squoosh](https://squoosh.app/)
+   - Aim for 70-85% quality
+
+2. **Use WebP format** when possible (better compression, same quality)
+
+3. **Avoid oversized images**:
+   - Max width: 1200px is usually enough
+   - Max file size: 500KB per image
+
+4. **Consistent aspect ratios**:
+   - Use 16:9 (landscape) for project screenshots
+   - Use 1:1 (square) for profile images
+
+## 🔄 Fallback Behavior
+
+If an image is missing, the portfolio will show a placeholder. Always ensure your images are properly named and placed in the correct directory.
 

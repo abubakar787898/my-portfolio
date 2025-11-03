@@ -26,19 +26,19 @@ export interface PersonalInfo {
 
 export const personalInfo: PersonalInfo = {
   name: 'Abubakar Islam',
-  title: 'Full Stack Developer',
-  tagline: 'Building scalable web applications with Laravel, React, and MERN stack',
+  title: 'Full Stack Web Developer',
+  tagline: 'Full Stack Web Developer with 3.5+ years of experience in building scalable and high-performance web applications. Skilled in Laravel (and Laravel APIs), React.js, Next.js, and Express.js, with hands-on expertise in the MERN stack (1.5 year).',
   email: 'abubakarislam016@gmail.com',
   location: 'Rahim Yar Khan',
   locationFull: 'Rahim Yar Khan, Punjab, Pakistan',
-  bio: `I'm a passionate Full Stack Developer with 3.5+ years of experience building scalable web applications. 
-        I specialize in Laravel, React, and MERN stack development, creating efficient and user-friendly solutions 
-        for businesses across Denmark, Spain, and beyond. My expertise includes designing robust APIs, implementing 
-        responsive UIs, and optimizing application performance.`,
+  bio: `I'm a passionate Full Stack Web Developer with 3.5+ years of experience building scalable and high-performance web applications. 
+        I specialize in Laravel (and Laravel APIs), React.js, Next.js, and Express.js, with hands-on expertise in the MERN stack (1.5 year). 
+        Strong focus on creating efficient, user-friendly, and secure solutions while continuously expanding skills in modern frameworks and best practices. 
+        I've worked on projects across Denmark and Spain, creating solutions for multi-domain platforms, booking systems, and learning management platforms.`,
   education: {
-    degree: 'BSCS',
-    institution: 'KFUEIT',
-    year: '2021',
+    degree: 'Bachelors in Computer Science (BSCS)',
+    institution: 'Khwaja Fareed University of Engineering and Information Technology (KFUEIT), Rahim Yar Khan',
+    year: 'Aug 2019 - July 2023',
   },
   languages: [
     { name: 'English', flag: '🇬🇧', proficiency: 'Fluent' },
@@ -48,8 +48,9 @@ export const personalInfo: PersonalInfo = {
   ],
   socialLinks: {
     github: 'https://github.com/abubakarislam',
-    linkedin: 'https://linkedin.com/in/abubakarislam',
+    linkedin: 'https://www.linkedin.com/in/abubakarislam/',
     email: 'mailto:abubakarislam016@gmail.com',
   },
+  resumeUrl: '/abubakar%20islam%20cv%20full%20stack%20web%20developer.pdf',
 }
 
