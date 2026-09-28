@@ -11,7 +11,7 @@ const About = () => {
   })
 
   const stats = [
-    { label: 'Years Experience', value: '3.5+', icon: '📅' },
+    { label: 'Years Experience', value: '5+', icon: '📅' },
     { label: 'Projects Completed', value: '10+', icon: '🚀' },
     { label: 'Tech Stacks', value: 'Multiple', icon: '💻' },
   ]
@@ -71,13 +71,11 @@ const About = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <motion.div
+              <div
                 className="absolute inset-0 rounded-2xl p-1"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
                 style={{
-                  background: 'linear-gradient(45deg, #8B5CF6, #A78BFA, #8B5CF6)',
-                  backgroundSize: '200% 200%',
+                  background: 'linear-gradient(135deg, #8B5CF6, #E879F9, #7C3AED)',
+                  boxShadow: '0 0 50px rgba(139, 92, 246, 0.3)',
                 }}
               >
                 <div className="w-full h-full rounded-2xl bg-primary-dark overflow-hidden">
@@ -92,7 +90,7 @@ const About = () => {
                     }}
                   />
                 </div>
-              </motion.div>
+              </div>
             </motion.div>
 
             {/* Stats Cards */}

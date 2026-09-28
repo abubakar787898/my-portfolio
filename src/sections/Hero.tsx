@@ -194,14 +194,12 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              {/* Rotating Gradient Border */}
-              <motion.div
+              {/* Gradient Border */}
+              <div
                 className="absolute inset-0 rounded-full p-1"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                 style={{
-                  background: 'linear-gradient(45deg, #8B5CF6, #A78BFA, #8B5CF6)',
-                  backgroundSize: '200% 200%',
+                  background: 'linear-gradient(135deg, #8B5CF6, #E879F9, #7C3AED)',
+                  boxShadow: '0 0 70px rgba(139, 92, 246, 0.35)',
                 }}
               >
                   <div className="w-full h-full rounded-full bg-primary-dark overflow-hidden">
@@ -216,7 +214,7 @@ const Hero = () => {
                     }}
                   />
                 </div>
-              </motion.div>
+              </div>
 
               {/* Floating Tech Icons */}
               {techIcons.map(({ Icon, name, delay }, index) => {
