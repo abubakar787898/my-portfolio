@@ -37,4 +37,9 @@ export const skills: Skill[] = [
   { id: '20', name: 'AWS', icon: 'SiAmazon', proficiency: 80, yearsOfExperience: 2, category: 'tools' },
   { id: '21', name: 'CI/CD', icon: 'SiGithubactions', proficiency: 85, yearsOfExperience: 2.5, category: 'tools' },
   { id: '22', name: 'Chrome Extensions', icon: 'SiGooglechrome', proficiency: 90, yearsOfExperience: 1.5, category: 'tools' },
+  { id: '23', name: 'Vue.js', icon: 'SiVuedotjs', proficiency: 80, yearsOfExperience: 2, category: 'frontend' },
+  { id: '24', name: 'REST APIs', icon: 'FaServer', proficiency: 92, yearsOfExperience: 4, category: 'backend' },
+  { id: '25', name: 'Vercel', icon: 'SiVercel', proficiency: 85, yearsOfExperience: 2.5, category: 'tools' },
+  { id: '26', name: 'Postman', icon: 'SiPostman', proficiency: 88, yearsOfExperience: 4, category: 'tools' },
+  { id: '27', name: 'Payment Gateways', icon: 'FaCreditCard', proficiency: 82, yearsOfExperience: 2, category: 'tools' },
 ]

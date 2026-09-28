@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { skills } from '../data/skills'
 import * as Icons from 'react-icons/si'
+import * as FaIcons from 'react-icons/fa'
 import { IconType } from 'react-icons'
 
 type SkillCategory = 'frontend' | 'backend' | 'database' | 'tools'
@@ -30,6 +31,11 @@ const getIcon = (iconName: string): IconType | null => {
     SiAmazon: Icons.SiAmazon,
     SiGithubactions: Icons.SiGithubactions,
     SiGooglechrome: Icons.SiGooglechrome,
+    SiVuedotjs: Icons.SiVuedotjs,
+    SiVercel: Icons.SiVercel,
+    SiPostman: Icons.SiPostman,
+    FaServer: FaIcons.FaServer,
+    FaCreditCard: FaIcons.FaCreditCard,
   }
   return iconMap[iconName] || null
 }
