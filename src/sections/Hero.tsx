@@ -78,7 +78,7 @@ const Hero = () => {
       <motion.div
         className="absolute inset-0 opacity-10"
         style={{
-          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #8B5CF6 0%, transparent 50%)`,
+          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #10B981 0%, transparent 50%)`,
         }}
       />
 
@@ -210,8 +210,8 @@ const Hero = () => {
               <div
                 className="absolute inset-0 rounded-full p-1"
                 style={{
-                  background: 'linear-gradient(135deg, #8B5CF6, #E879F9, #7C3AED)',
-                  boxShadow: '0 0 70px rgba(139, 92, 246, 0.35)',
+                  background: 'linear-gradient(135deg, #10B981, #34D399, #059669)',
+                  boxShadow: '0 0 70px rgba(16, 185, 129, 0.35)',
                 }}
               >
                   <div className="w-full h-full rounded-full bg-primary-dark overflow-hidden">

@@ -74,8 +74,8 @@ const About = () => {
               <div
                 className="absolute inset-0 rounded-2xl p-1"
                 style={{
-                  background: 'linear-gradient(135deg, #8B5CF6, #E879F9, #7C3AED)',
-                  boxShadow: '0 0 50px rgba(139, 92, 246, 0.3)',
+                  background: 'linear-gradient(135deg, #10B981, #34D399, #059669)',
+                  boxShadow: '0 0 50px rgba(16, 185, 129, 0.3)',
                 }}
               >
                 <div className="w-full h-full rounded-2xl bg-primary-dark overflow-hidden">

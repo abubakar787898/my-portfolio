@@ -49,7 +49,7 @@ function App() {
         {/* Ambient gradient orbs */}
         <div aria-hidden className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
           <div className="absolute -top-40 -left-40 w-[36rem] h-[36rem] bg-secondary/15 rounded-full blur-3xl" />
-          <div className="absolute top-1/3 -right-40 w-[32rem] h-[32rem] bg-fuchsia-500/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 -right-40 w-[32rem] h-[32rem] bg-emerald-500/10 rounded-full blur-3xl" />
           <div className="absolute -bottom-48 left-1/4 w-[36rem] h-[36rem] bg-secondary-dark/15 rounded-full blur-3xl" />
         </div>
         <div className="relative z-10">
