@@ -26,6 +26,10 @@ const getIcon = (iconName: string): IconType | null => {
     SiMysql: Icons.SiMysql,
     SiGit: Icons.SiGit,
     SiGithub: Icons.SiGithub,
+    SiAndroid: Icons.SiAndroid,
+    SiAmazon: Icons.SiAmazon,
+    SiGithubactions: Icons.SiGithubactions,
+    SiGooglechrome: Icons.SiGooglechrome,
   }
   return iconMap[iconName] || null
 }

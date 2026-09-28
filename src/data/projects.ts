@@ -8,7 +8,7 @@ export interface Project {
   image: string
   liveUrl?: string
   githubUrl?: string
-  category: 'all' | 'laravel' | 'react' | 'mern' | 'nextjs'
+  category: 'all' | 'laravel' | 'react' | 'mern' | 'nextjs' | 'extension'
   stats?: {
     label: string
     value: string | number
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     name: 'YAKSPORT',
     description: 'Multi-Region Sports Travel Management Platform',
     longDescription: 'A Denmark-based platform for managing sports team travel across 6 regional domains. Built a comprehensive multi-domain system for hotel booking, flight management, and lead generation with digital contract signing workflows for faster onboarding. Ensured scalability, performance, and security across regions with a responsive UI, collaborating with international teams to deliver a high-availability, user-friendly solution.',
-    techStack: ['Laravel', 'React', 'Next.js', 'MySQL', 'RESTful APIs'],
+    techStack: ['Next.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     features: [
       'Multi-domain architecture (6 regional domains)',
       'Hotel booking system',
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     name: 'Evarto',
     description: 'Nordic Venue Booking Platform',
     longDescription: 'A Danish event and venue booking marketplace for meetings, conferences, and celebrations. Developed venue management features for hotels and restaurants to list rooms, halls, and services. Improved search, filtering, and booking workflows for a seamless user experience. Implemented a subscription-based model with API-driven billing and payments. Enhanced scalability to expand from Denmark (950+ venues) to Sweden, boosting traffic and revenue.',
-    techStack: ['Laravel', 'React', 'MySQL', 'RESTful APIs'],
+    techStack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     features: [
       '950+ venues database',
       'Venue management for hotels & restaurants',
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     name: 'JURII',
     description: 'All-in-One Digital Management Platform',
     longDescription: 'A full-stack productivity suite built with Next.js and Laravel, serving personal and business users. Integrated email client, cloud drive, and password manager under one platform. Built end-to-end encryption, real-time file/email handling, and scalable API integrations. Focused on speed, privacy, and long-term scalability with a secure backend and modern UI.',
-    techStack: ['Next.js', 'Laravel', 'MySQL', 'RESTful APIs'],
+    techStack: ['Next.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     features: [
       'Integrated email client',
       'Cloud drive storage',
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     name: 'Minder',
     description: 'Step-Based Learning Application',
     longDescription: 'A step-based learning application designed to make structured learning easier for users. Worked on backend development and React-based admin panel, focusing on user progress tracking, course management, and content organization. Developed API connections, data validation, and workflow optimizations to improve scalability and usability for both learners and administrators. Created a smooth and interactive experience where users can learn step-by-step, while admins can easily add, track, and manage learning materials.',
-    techStack: ['Laravel', 'React', 'Admin Panel', 'RESTful APIs', 'MySQL'],
+    techStack: ['React.js', 'Redux', 'Node.js', 'Express.js', 'MongoDB'],
     features: [
       'Step-based learning structure',
       'React-based admin panel',
@@ -165,6 +165,23 @@ export const projects: Project[] = [
     image: '/images/naim.png',
     liveUrl: 'https://naim.dk',
     category: 'react',
+  },
+  {
+    id: '8',
+    name: 'MediaGrabber',
+    description: 'Universal Video & Image Downloader Chrome Extension',
+    longDescription: 'A Manifest V3 Chrome extension that adds a smart hover download button to videos and images on any website. Auto-detects the best available quality, intercepts Facebook videos via page-context fetch/XHR hooks (HD/SD playable URLs) with CSP-safe injection, and ships a popup media gallery with quality badges plus one-click download-all.',
+    techStack: ['JavaScript', 'Chrome Extension (MV3)', 'chrome.downloads API', 'chrome.scripting'],
+    features: [
+      'Hover download button on any site media',
+      'Best-quality auto-detection (srcset & video sources)',
+      'Facebook HD/SD video interception',
+      'CSP-safe page-context injection',
+      'Popup media gallery with quality badges',
+      'One-click download all',
+    ],
+    image: '/images/mediagrabber.svg',
+    category: 'extension',
   },
 ]
 

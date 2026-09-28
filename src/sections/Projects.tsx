@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import { projects } from '../data/projects'
 
-type FilterType = 'all' | 'laravel' | 'react' | 'mern' | 'nextjs'
+type FilterType = 'all' | 'laravel' | 'react' | 'mern' | 'nextjs' | 'extension'
 
 const Projects = () => {
   const [filter, setFilter] = useState<FilterType>('all')
@@ -13,7 +13,7 @@ const Projects = () => {
     triggerOnce: true,
   })
 
-  const filters: FilterType[] = ['all', 'laravel', 'react', 'mern', 'nextjs']
+  const filters: FilterType[] = ['all', 'laravel', 'react', 'mern', 'nextjs', 'extension']
 
   const filterLabels: Record<FilterType, string> = {
     all: 'All Projects',
@@ -21,6 +21,7 @@ const Projects = () => {
     react: 'React.js',
     mern: 'MERN Stack',
     nextjs: 'Next.js',
+    extension: 'Extensions',
   }
 
   const filteredProjects = projects.filter((project) => {

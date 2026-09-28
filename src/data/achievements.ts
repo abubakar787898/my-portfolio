@@ -16,7 +16,7 @@ export const achievements: Achievement[] = [
   },
   {
     id: '2',
-    title: 'Hardworking Employer of the Year',
+    title: 'Hardworking Employee of the Year',
     organization: 'DanZee Tech',
     year: '2024',
     description: 'Recognized for exceptional dedication and consistent performance throughout the year',

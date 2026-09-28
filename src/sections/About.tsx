@@ -76,7 +76,7 @@ const About = () => {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
                 style={{
-                  background: 'linear-gradient(45deg, #64FFDA, #4DD4B8, #64FFDA)',
+                  background: 'linear-gradient(45deg, #8B5CF6, #A78BFA, #8B5CF6)',
                   backgroundSize: '200% 200%',
                 }}
               >

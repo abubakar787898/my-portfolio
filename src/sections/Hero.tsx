@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import { SiLaravel, SiReact, SiNodedotjs, SiMongodb, SiNextdotjs } from 'react-icons/si'
+import { SiReact, SiNextdotjs, SiNodedotjs, SiAmazon, SiAndroid } from 'react-icons/si'
 import { personalInfo } from '../data/personalInfo'
 import Typewriter from '../components/Typewriter'
 
@@ -18,11 +18,11 @@ const Hero = () => {
   }, [])
 
   const techIcons = [
-    { Icon: SiLaravel, name: 'Laravel', delay: 0 },
-    { Icon: SiReact, name: 'React', delay: 0.2 },
+    { Icon: SiReact, name: 'React', delay: 0 },
+    { Icon: SiNextdotjs, name: 'Next.js', delay: 0.2 },
     { Icon: SiNodedotjs, name: 'Node.js', delay: 0.4 },
-    { Icon: SiMongodb, name: 'MongoDB', delay: 0.6 },
-    { Icon: SiNextdotjs, name: 'Next.js', delay: 0.8 },
+    { Icon: SiAmazon, name: 'AWS', delay: 0.6 },
+    { Icon: SiAndroid, name: 'Android', delay: 0.8 },
   ]
 
   const containerVariants = {
@@ -78,7 +78,7 @@ const Hero = () => {
       <motion.div
         className="absolute inset-0 opacity-10"
         style={{
-          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #64FFDA 0%, transparent 50%)`,
+          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #8B5CF6 0%, transparent 50%)`,
         }}
       />
 
@@ -200,7 +200,7 @@ const Hero = () => {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                 style={{
-                  background: 'linear-gradient(45deg, #64FFDA, #4DD4B8, #64FFDA)',
+                  background: 'linear-gradient(45deg, #8B5CF6, #A78BFA, #8B5CF6)',
                   backgroundSize: '200% 200%',
                 }}
               >

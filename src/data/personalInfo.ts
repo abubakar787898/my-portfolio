@@ -26,15 +26,14 @@ export interface PersonalInfo {
 
 export const personalInfo: PersonalInfo = {
   name: 'Abubakar Islam',
-  title: 'Full Stack Web Developer',
-  tagline: 'Full Stack Web Developer with 4+ years of experience in building scalable and high-performance web applications. Skilled in Laravel (and Laravel APIs), React.js, Next.js, and Express.js, with hands-on expertise in the MERN stack (1.5 year).',
+  title: 'Software Engineer',
+  tagline: 'Software Engineer with 5+ years of experience building scalable web & mobile applications — from AI-powered MERN platforms to Chrome extensions. Shipped real products for remote teams in Denmark and Spain.',
   email: 'abubakarislam016@gmail.com',
   location: 'Rahim Yar Khan',
   locationFull: 'Rahim Yar Khan, Punjab, Pakistan',
-  bio: `I'm a passionate Full Stack Web Developer with 4+ years of experience building scalable and high-performance web applications. 
-        I specialize in Laravel (and Laravel APIs), React.js, Next.js, and Express.js, with hands-on expertise in the MERN stack (1.5 year). 
-        Strong focus on creating efficient, user-friendly, and secure solutions while continuously expanding skills in modern frameworks and best practices. 
-        I've worked on projects across Denmark and Spain, creating solutions for multi-domain platforms, booking systems, and learning management platforms.`,
+  bio: `I'm a Software Engineer with 5+ years of experience designing and shipping scalable applications end to end — strong across the stack with React, Next.js and TypeScript on the frontend, Node.js/Express and Laravel on the backend, MongoDB and MySQL underneath, and cross-platform mobile apps in React Native (Android). 
+        I've spent the last several years working remotely with product teams in Denmark and Spain, building booking platforms, learning-management systems and digital productivity tools used by real customers. 
+        I also build AI-powered tools and browser extensions, and I'm comfortable owning features from database design to deployment with clean, maintainable code that holds up in production.`,
   education: {
     degree: 'Bachelors in Computer Science (BSCS)',
     institution: 'Khwaja Fareed University of Engineering and Information Technology (KFUEIT), Rahim Yar Khan',
@@ -50,6 +49,6 @@ export const personalInfo: PersonalInfo = {
     linkedin: 'https://www.linkedin.com/in/abubakarislam/',
     email: 'mailto:abubakarislam016@gmail.com',
   },
-  resumeUrl: '/abubakar%20islam%20cv%20full%20stack%20web%20developer.pdf',
+  resumeUrl: '/Abubakar-Islam-Software-Engineer-CV.pdf',
 }
 

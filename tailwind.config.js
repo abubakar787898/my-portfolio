@@ -8,19 +8,19 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0A192F',
-          dark: '#020C1B',
-          light: '#112240',
+          DEFAULT: '#0D0A1F',
+          dark: '#070512',
+          light: '#1A1433',
         },
         secondary: {
-          DEFAULT: '#64FFDA',
-          light: '#90FFE5',
-          dark: '#4DD4B8',
+          DEFAULT: '#8B5CF6',
+          light: '#A78BFA',
+          dark: '#7C3AED',
         },
         accent: {
-          DEFAULT: '#8892B0',
-          light: '#A8B2D1',
-          dark: '#495670',
+          DEFAULT: '#9AA1B9',
+          light: '#B9BFD4',
+          dark: '#5A6076',
         },
       },
       fontFamily: {
@@ -73,8 +73,8 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-dark': 'linear-gradient(135deg, #0A192F 0%, #020C1B 100%)',
-        'gradient-cyan': 'linear-gradient(135deg, #64FFDA 0%, #4DD4B8 100%)',
+        'gradient-dark': 'linear-gradient(135deg, #0D0A1F 0%, #070512 100%)',
+        'gradient-cyan': 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)',
       },
     },
   },
