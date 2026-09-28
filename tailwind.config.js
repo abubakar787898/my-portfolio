@@ -60,8 +60,8 @@ export default {
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
         glow: {
-          '0%': { boxShadow: '0 0 5px #64FFDA, 0 0 10px #64FFDA, 0 0 15px #64FFDA' },
-          '100%': { boxShadow: '0 0 10px #64FFDA, 0 0 20px #64FFDA, 0 0 30px #64FFDA' },
+          '0%': { boxShadow: '0 0 5px #8B5CF6, 0 0 10px #8B5CF6, 0 0 15px #8B5CF6' },
+          '100%': { boxShadow: '0 0 10px #8B5CF6, 0 0 20px #8B5CF6, 0 0 30px #8B5CF6' },
         },
         rotate: {
           '0%': { transform: 'rotate(0deg)' },

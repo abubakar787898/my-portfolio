@@ -47,7 +47,7 @@ export const experiences: ExperienceItem[] = [
   {
     id: '3',
     company: 'DanZee Tech',
-    title: 'Full Stack Web Developer',
+    title: 'Full Stack Developer',
     location: 'Aarhus, Denmark',
     startDate: 'Aug 2021',
     endDate: '2022',
