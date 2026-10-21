@@ -34,7 +34,6 @@ export default {
         'slide-left': 'slideLeft 0.6s ease-out',
         'slide-right': 'slideRight 0.6s ease-out',
         'glow': 'glow 2s ease-in-out infinite alternate',
-        'rotate-border': 'rotate 3s linear infinite',
         'float': 'float 3s ease-in-out infinite',
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
@@ -62,10 +61,6 @@ export default {
         glow: {
           '0%': { boxShadow: '0 0 5px #10B981, 0 0 10px #10B981, 0 0 15px #10B981' },
           '100%': { boxShadow: '0 0 10px #10B981, 0 0 20px #10B981, 0 0 30px #10B981' },
-        },
-        rotate: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },

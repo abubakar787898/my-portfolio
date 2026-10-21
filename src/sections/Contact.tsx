@@ -58,7 +58,6 @@ const Contact = () => {
               top: `${Math.random() * 100}%`,
             }}
             animate={{
-              rotate: [0, 360],
               scale: [1, 1.2, 1],
             }}
             transition={{

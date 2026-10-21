@@ -14,7 +14,6 @@ export const skills: Skill[] = [
   { id: '3', name: 'React.js', icon: 'SiReact', proficiency: 95, yearsOfExperience: 5, category: 'frontend' },
   { id: '4', name: 'Next.js', icon: 'SiNextdotjs', proficiency: 88, yearsOfExperience: 3.5, category: 'frontend' },
   { id: '5', name: 'React Native', icon: 'SiReact', proficiency: 85, yearsOfExperience: 2, category: 'frontend' },
-  { id: '6', name: 'Android', icon: 'SiAndroid', proficiency: 80, yearsOfExperience: 2, category: 'frontend' },
   { id: '7', name: 'HTML5', icon: 'SiHtml5', proficiency: 98, yearsOfExperience: 5, category: 'frontend' },
   { id: '8', name: 'CSS', icon: 'SiCss3', proficiency: 95, yearsOfExperience: 5, category: 'frontend' },
   { id: '9', name: 'Tailwind CSS', icon: 'SiTailwindcss', proficiency: 92, yearsOfExperience: 3.5, category: 'frontend' },
@@ -34,7 +33,7 @@ export const skills: Skill[] = [
   // Tools
   { id: '18', name: 'Git', icon: 'SiGit', proficiency: 92, yearsOfExperience: 5, category: 'tools' },
   { id: '19', name: 'GitHub', icon: 'SiGithub', proficiency: 95, yearsOfExperience: 5, category: 'tools' },
-  { id: '20', name: 'AWS', icon: 'SiAmazon', proficiency: 80, yearsOfExperience: 2, category: 'tools' },
+  { id: '20', name: 'VPS Deployment', icon: 'FaServer', proficiency: 85, yearsOfExperience: 3, category: 'tools' },
   { id: '21', name: 'CI/CD', icon: 'SiGithubactions', proficiency: 85, yearsOfExperience: 2.5, category: 'tools' },
   { id: '22', name: 'Chrome Extensions', icon: 'SiGooglechrome', proficiency: 90, yearsOfExperience: 1.5, category: 'tools' },
   { id: '23', name: 'Vue.js', icon: 'SiVuedotjs', proficiency: 80, yearsOfExperience: 2, category: 'frontend' },
