@@ -31,7 +31,7 @@ export const experiences: ExperienceItem[] = [
     id: '2',
     company: 'Tututor AI',
     title: 'MERN Stack Developer',
-    location: 'Barcelona, Spain',
+    location: 'Barcelona, Spain (Remote)',
     startDate: 'Jan 2023',
     endDate: '2024',
     responsibilities: [
@@ -48,7 +48,7 @@ export const experiences: ExperienceItem[] = [
     id: '3',
     company: 'DanZee Tech',
     title: 'Full Stack Developer',
-    location: 'Aarhus, Denmark',
+    location: 'Aarhus, Denmark (Remote)',
     startDate: 'Aug 2021',
     endDate: '2022',
     responsibilities: [

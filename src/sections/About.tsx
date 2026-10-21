@@ -86,7 +86,7 @@ const About = () => {
                     loading="lazy"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement
-                      target.src = 'https://via.placeholder.com/300?text=AI'
+                      target.src = '/images/profile1.png'
                     }}
                   />
                 </div>

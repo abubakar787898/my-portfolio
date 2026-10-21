@@ -28,7 +28,7 @@ export const personalInfo: PersonalInfo = {
   name: 'Abubakar Islam',
   title: 'Software Engineer',
   tagline: 'Software Engineer with 5+ years of experience building scalable web & mobile applications — from AI-powered MERN platforms to Chrome extensions. Shipped real products for remote teams in Denmark and Spain.',
-  email: 'abubakarislam016@gmail.com',
+  email: 'abubakarislam281@gmail.com',
   location: 'Rahim Yar Khan',
   locationFull: 'Rahim Yar Khan, Punjab, Pakistan',
   bio: `I'm a Software Engineer with 5+ years of experience designing and shipping scalable applications end to end — strong across the stack with React, Next.js and TypeScript on the frontend, Node.js/Express and Laravel on the backend, MongoDB and MySQL underneath, and cross-platform mobile apps in React Native (Android). 
@@ -47,7 +47,7 @@ export const personalInfo: PersonalInfo = {
   socialLinks: {
     github: 'https://github.com/abubakar787898',
     linkedin: 'https://www.linkedin.com/in/abubakarislam/',
-    email: 'mailto:abubakarislam016@gmail.com',
+    email: 'mailto:abubakarislam281@gmail.com',
   },
   resumeUrl: '/Abubakar-Islam-Software-Engineer-CV.pdf',
 }

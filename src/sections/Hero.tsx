@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import { SiReact, SiNextdotjs, SiNodedotjs, SiAmazon, SiAndroid } from 'react-icons/si'
+import { SiReact, SiNextdotjs, SiNodedotjs, SiLaravel, SiTypescript } from 'react-icons/si'
 import { personalInfo } from '../data/personalInfo'
 import Typewriter from '../components/Typewriter'
 
@@ -21,8 +21,8 @@ const Hero = () => {
     { Icon: SiReact, name: 'React', delay: 0 },
     { Icon: SiNextdotjs, name: 'Next.js', delay: 0.2 },
     { Icon: SiNodedotjs, name: 'Node.js', delay: 0.4 },
-    { Icon: SiAmazon, name: 'AWS', delay: 0.6 },
-    { Icon: SiAndroid, name: 'Android', delay: 0.8 },
+    { Icon: SiLaravel, name: 'Laravel', delay: 0.6 },
+    { Icon: SiTypescript, name: 'TypeScript', delay: 0.8 },
   ]
 
   const containerVariants = {
@@ -222,7 +222,7 @@ const Hero = () => {
                     loading="eager"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement
-                      target.src = 'https://via.placeholder.com/400?text=AI'
+                      target.src = '/images/profile1.png'
                     }}
                   />
                 </div>

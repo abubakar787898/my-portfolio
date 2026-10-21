@@ -142,7 +142,7 @@ Customize colors in `tailwind.config.js`.
 
 ## Contact
 
-- Email: abubakarislam016@gmail.com
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
+- Email: abubakarislam281@gmail.com
+- LinkedIn: [linkedin.com/in/abubakarislam](https://www.linkedin.com/in/abubakarislam/)
+- GitHub: [github.com/abubakar787898](https://github.com/abubakar787898)
 

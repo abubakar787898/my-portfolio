@@ -3,26 +3,26 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { FiMenu, FiX, FiDownload } from 'react-icons/fi'
 import { personalInfo } from '../data/personalInfo'
 
+const NAV_ITEMS = [
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Contact', href: '#contact' },
+]
+
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
-
-  const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
-  ]
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
       
       // Update active section based on scroll position
-      const sections = navItems.map(item => item.href.substring(1))
+      const sections = NAV_ITEMS.map(item => item.href.substring(1))
       const currentSection = sections.find(section => {
         const element = document.getElementById(section)
         if (element) {
@@ -72,7 +72,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.href)}
@@ -125,7 +125,7 @@ const Navigation = () => {
             className="md:hidden glass-effect border-t border-secondary/20"
           >
             <div className="px-4 py-4 space-y-4">
-              {navItems.map((item) => (
+              {NAV_ITEMS.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
